@@ -2,6 +2,8 @@
 
 A cross-platform native application that displays images (including QR codes) in a persistent window that stays on top of all other windows.
 
+Use case: Trainer led sessions where persistent content like a QR code for attendance taking is needed to overlay on top of presentations and other windows. 
+
 ## Features
 
 - **Cross-platform**: Works on Windows and macOS
