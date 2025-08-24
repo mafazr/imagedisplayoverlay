@@ -1,20 +1,20 @@
-# QR Code Display Application
+# Image Display Overlay
 
-A cross-platform native application that displays QR codes from URLs and stays on top of all other windows.
+A cross-platform native application that displays images (including QR codes) in a persistent window that stays on top of all other windows.
 
 ## Features
 
 - **Cross-platform**: Works on Windows and macOS
 - **Always on top**: Window stays above all other applications
-- **URL input**: Enter any URL to generate and display its QR code
+- **Image display**: Display any image file or generate QR codes from URLs
 - **Modern UI**: Clean, responsive interface with smooth animations
-- **Error handling**: Comprehensive error handling for network issues
-- **Responsive design**: Automatically scales QR codes to fit the window
+- **Error handling**: Comprehensive error handling for network and file issues
+- **Responsive design**: Automatically scales images to fit the window
 
 ## Requirements
 
 - Python 3.8 or higher
-- PyQt6
+- PyQt5 (stable cross-platform GUI framework)
 - qrcode library with PIL support
 - requests library
 - Pillow (PIL)
@@ -30,7 +30,7 @@ A cross-platform native application that displays QR codes from URLs and stays o
 
    Or install manually:
    ```bash
-   pip install PyQt6 qrcode[pil] requests Pillow
+   pip install PyQt5 qrcode[pil] requests Pillow
    ```
 
 ## Usage
@@ -57,7 +57,7 @@ A cross-platform native application that displays QR codes from URLs and stays o
 
 ## Technical Details
 
-- **Framework**: PyQt6 for cross-platform GUI
+- **Framework**: PyQt5 for cross-platform GUI (stable and reliable)
 - **QR Generation**: Uses the `qrcode` library with PIL backend
 - **Threading**: QR code generation runs in a separate thread to prevent UI blocking
 - **Error Handling**: Comprehensive error handling for network and generation issues
@@ -78,7 +78,7 @@ A cross-platform native application that displays QR codes from URLs and stays o
 
 ### Platform-Specific Notes
 
-- **Windows**: Tested on Windows 10/11
+- **Windows**: Tested on Windows 10/11 with PyQt5 (stable)
 - **macOS**: Tested on macOS 10.15+
 - **Linux**: Should work but not extensively tested
 
